@@ -1,4 +1,5 @@
 // craco.config.js
+// **This configures webpack to enable tailwind
 module.exports = {
   style: {
     postcss: {
