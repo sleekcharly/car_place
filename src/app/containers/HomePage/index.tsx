@@ -1,12 +1,14 @@
-import React from 'react';
-import styled from 'styled-components';
-import tw from 'twin.macro';
-import { Navbar } from '../../components/navBar';
-import { TopSection } from './topSection';
+import React from "react";
+import styled from "styled-components";
+import tw from "twin.macro";
+import { BookCard } from "../../components/bookCard";
+import { Marginer } from "../../components/marginer";
+import { Navbar } from "../../components/navBar";
+import { TopSection } from "./topSection";
 
 const PageContainer = styled.div`
-// Set css properties for the div element PageContainer component with flex, flex-col, full width, full height, centralized items and hidden overflow
- ${tw`
+  // Set css properties for the div element PageContainer component with flex, flex-col, full width, full height, centralized items and hidden overflow
+  ${tw`
     flex
     flex-col
     w-full
@@ -17,8 +19,12 @@ const PageContainer = styled.div`
 `;
 
 export function HomePage() {
-    return <PageContainer>
-        <Navbar />
-        <TopSection />
+  return (
+    <PageContainer>
+      <Navbar />
+      <TopSection />
+      <Marginer direction="vertical" margin="4em" />
+      <BookCard />
     </PageContainer>
+  );
 }

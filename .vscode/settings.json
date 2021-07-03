@@ -1,3 +1,4 @@
 {
-    "emmet.showAbbreviationSuggestions": false
+    "emmet.showAbbreviationSuggestions": false,
+    "tailwindCSS.emmetCompletions": true
 }
